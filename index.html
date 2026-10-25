@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Post App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Web Post</h1>
+    <button id="new-post-btn">+ New Post</button>
+  </header>
+
+  <main>
+    <section id="post-form" hidden>
+      <h2>Create a Post</h2>
+
+      <form id="create-post-form">
+        <label for="post-title">Title</label>
+        <input id="post-title" type="text" required>
+
+        <label for="post-body">Body</label>
+        <textarea id="post-body" rows="5" required></textarea>
+
+        <button type="button" id="cancel-btn">Cancel</button>
+        <button type="submit">Publish</button>
+      </form>
+    </section>
+
+    <section>      <h2>Published Posts</h2>
+      <div id="posts-list">No posts yet.</div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
